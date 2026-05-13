@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Theme Changer</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+            transition: 0.5s;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+
+    <h1 id="heading">
+        Welcome Student
+    </h1>
+
+    <p id="message">
+        Click buttons to change website theme
+    </p>
+
+    <button onclick="darkMode()">
+        Dark Mode
+    </button>
+
+    <button onclick="lightMode()">
+        Light Mode
+    </button>
+
+    <button onclick="blueMode()">
+        Blue Theme
+    </button>
+
+    <script>
+
+        function darkMode() {
+            document.getElementById("body").style.backgroundColor = "black";
+
+            document.getElementById("body").style.color = "white";
+
+            document.getElementById("heading").innerHTML =
+                "Dark Mode Activated";
+        }
+
+        function lightMode() {
+            document.getElementById("body").style.backgroundColor = "white";
+
+            document.getElementById("body").style.color = "black";
+
+            document.getElementById("heading").innerHTML =
+                "Light Mode Activated";
+        }
+
+        function blueMode() {
+            document.getElementById("body").style.backgroundColor = "#74b9ff";
+
+            document.getElementById("body").style.color = "white";
+
+            document.getElementById("heading").innerHTML =
+                "Blue Theme Activated";
+        }
+
+    </script>
+
+</body>
+
+</html>
